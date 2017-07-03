@@ -1,0 +1,5 @@
+Activity에서 사용할 수 있는 주요 명령들
+ - findViewById()		컴포넌트를 아이디로 불러옴
+ - getSystemService()	시스템 서비스를 호출함(앱 외부 서비스)
+ - getResource()		앱의 리소스 패키지를 반환
+ - getApplicationContext()	앱의 최상위 개체 정보를 반환(Context)

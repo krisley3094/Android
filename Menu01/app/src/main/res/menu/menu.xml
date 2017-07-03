@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".MainActivity">
+
+    <!-- 메뉴에 추가하고 싶은 항목들은 item 형식으로 정의 -->
+    <item
+        android:id="@+id/action_search"
+        android:title="검색"
+        android:icon="@drawable/action_search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_camera"
+        android:title="사진"
+        android:icon="@drawable/device_access_camera"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_info"
+        android:title="앱 정보"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_setting"
+        android:title="설정"
+        app:showAsAction="ifRoom"/>
+
+</menu>

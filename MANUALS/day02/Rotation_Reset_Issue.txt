@@ -1,0 +1,10 @@
+[매니페스트 수정을 통하여 회전시 초기화를 방지]
+
+AndroidManifest.xml 로 가서 아래의 부분을 추가
+
+ - 회전 방지
+	screenOrientation="portrait"
+	screenOrientation="landscape"
+
+ - 회전시 재생성 방지
+	android:configChanges="screenSize|orientation"

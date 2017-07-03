@@ -1,0 +1,12 @@
+String[] chart = new String[]{
+"눈물의 온도","무제","SIGNAL","개소리","NEVER",
+"I LUV IT", "LONELY", "오늘 취하면", "New Face",
+"Shape of You", "팔레트", "SUPER STAR",
+"맞지?","REALLY REALLY","BLUE MOON","Oh Little Girl",
+"미치고 싶다","INTRO. 권지용","처음부터 너와 나",
+"사랑이 잘(With 오혁)", "CALLING YOU",
+"열어줘","밤편지","첫눈처럼 너에게 가겠다",
+"Marry Me", "TOMBOY", "사랑앓이(With 김나영)",
+"KNOCK KNOCK","아름다워","OUTRO.신곡",
+"좋다고 말해"
+};

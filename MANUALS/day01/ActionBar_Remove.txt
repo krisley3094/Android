@@ -1,0 +1,6 @@
+[액션바 없에는 방법]
+
+style.xml에 아래의 두 줄을 추가
+
+<item name="windowNoTitle">true</item>
+<item name="windowActionBar">false</item>

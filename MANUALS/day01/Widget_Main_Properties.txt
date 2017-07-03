@@ -1,0 +1,18 @@
+위젯
+ - 화면에 배치 가능한 도구들
+
+[공통 기능]
+android:text		표시글자
+android:textAllCaps		대문자만?
+android:layout_width	표시 너비
+android:layout_height	표시 높이
+android:layout_gravity	배치 정렬상태
+android:gravity		내용물의 정렬상태
+android:layout_weight	여분의 공간 점유율
+android:padding		안쪽 여백
+android:layout_margin	바깥쪽 여백
+android:background		배경색
+android:textColor		글자색
+
+[EditText]
+android:inputType		입력형태

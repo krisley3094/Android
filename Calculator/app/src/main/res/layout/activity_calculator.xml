@@ -13,14 +13,34 @@
         android:id="@+id/SimpleCalcLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
         android:orientation="vertical"
         android:gravity="center">
-        <EditText
-            android:id="@+id/firstInput"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="First Input"/>
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/firstInput"
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="First Input"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/secondInput"
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Second Input"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
         <LinearLayout
             android:id="@+id/operationLayout"
             android:layout_width="match_parent"
@@ -48,12 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="/"/>
         </LinearLayout>
-        <EditText
-            android:id="@+id/secondInput"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Second Input"/>
+
     </LinearLayout>
     <LinearLayout
         android:id="@+id/extraFunctionsLayout"

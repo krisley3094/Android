@@ -1,0 +1,5 @@
+아래의 경로로 이동하여 font.xml을 덮어쓰기한다
+
+C:\Program Files\Android\Android Studio\plugins\android\lib\layoutlib\data\fonts
+
+안드로이드 스튜디오 재시작하면 한글 미리보기 가능

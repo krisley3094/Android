@@ -1,0 +1,10 @@
+[안드로이드 스튜디오 기본 설정 내용]
+
+File -> Setting 
+
+(1) auto import 설정.... 자동으로 import 수행(모두 체크)
+(2) 글씨 변경
+ - font 검색
+ - Save As...
+ - show only 체크 해제
+ - 원하는 글씨 설정후 apply

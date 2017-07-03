@@ -1,0 +1,2 @@
+InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+imm.hideSoftInputFromInputMethod(¾ÆÀÌµð.getWindowToken(), 0);

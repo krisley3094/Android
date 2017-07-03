@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itbank.event04.MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 첫번째 숫자 입력창 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/v1"
+            android:hint="첫번째 숫자"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:src="@drawable/erasor"
+            android:id="@+id/e1"
+            android:onClick="erase"
+            android:scaleType="fitXY"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <!-- 두번째 숫자 입력창 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/v2"
+            android:hint="두번째 숫자"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:src="@drawable/erasor"
+            android:id="@+id/e2"
+            android:onClick="erase"
+            android:scaleType="fitXY"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <!-- 더하기 / 빼기 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 더하기 버튼 -->
+        <Button
+            android:text="더하기"
+            android:onClick="plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <!-- 빼기 버튼 -->
+        <Button
+            android:text="빼기"
+            android:onClick="minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- 결과 창 -->
+    <TextView
+        android:id="@+id/result"
+        android:padding="15dp"
+        android:textSize="50dp"
+        android:gravity="right|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

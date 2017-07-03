@@ -1,0 +1,32 @@
+[알림] Notification
+ - 상태창에 앱의 메세지를 표시하는 것
+ - 서비스에서도 가능하고, 앱에서도 가능하다
+ - 롤리팝 이후부터는 한줄메세지가 뜨지 않는다(우선순위상승 필요)
+
+[진행구조]
+
+NotificationCompat.Builder 
+→ 설정 
+→ 버전에 따른 NotificationBuilder에서의 우선순위 설정
+→ Notification 생성
+→ NotificationManager 획득(getSystemService())
+→ notification 실행(manager.notify(요청코드, 알림객체))
+
+[빌더의 주요 설정 옵션]
+.setColor(int argb)		알림의 배경색상을 설정
+.setContentTitle(String)	알림의 제목을 설정
+.setContentText(String)	알림의 내용을 설정
+.setTicker(String)		잠시 노출될 때 표시되는 내용
+.setSmallIcon(Drawable)	작은 아이콘
+.setLargeIcon(Bitmap)	큰 아이콘
+			BitmapFactory.decodeResource(getResources(), 아이디)
+.setContentIntent(intent)	누르면 이동할 intent
+.setAutoCancel(boolean)	누르면 사라질지에 대한 설정
+.setWhen(long time)		시간
+.setSound(Uri resource)	소리
+			String resourceName = ContentResolver.SCHEME_ANDROID_RESOURCE+"://"+getPackageName()+"/raw/"+soundFile;
+			Uri.parse(resourceName)를 setSound()에 설정
+			확장자는 적지말것
+
+
+

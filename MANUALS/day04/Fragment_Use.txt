@@ -1,0 +1,37 @@
+[Fragment의 사용]
+
+[1] 정적 배치
+ -> New -> Fragment를 생성
+ -> xml에 디자인 정의
+ -> java에 onCreateView()를 재정의하여 내용 구현
+ 	-> View를 inflate 생성
+	-> 이벤트 설정(필요하다면)
+	-> return view
+ -> 액티비티에 fragment를 배치
+	-> <fragment>
+ -> 실행
+
+[2] 동적 배치
+ -> Fragment 생성과 onCreateView()까지는 정적과 동일
+ -> 아래의 코드를 이용하여 배치 / 교체 / 삭제 / 숨김
+	FirstFragment fragment = new FirstFragment();
+            	Bundle bundle = new Bundle();
+	//bundle에 데이터 추가가 가능...
+	fragment.setArguments(bundle);//fragment에 데이터 전달 효과
+
+	FragmentTransaction transaction = getFragmentManager().beginTransaction();
+	
+	//add , replace, hide, remove
+	transaction.replace(R.id.container, fragment);
+	transaction.commit();
+
+
+
+
+
+
+
+
+
+
+

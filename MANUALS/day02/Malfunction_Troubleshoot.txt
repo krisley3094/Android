@@ -1,0 +1,9 @@
+[코드 문제 없이 이상 현상 발생시]
+
+1. Build 메뉴 
+	-> Clean Project
+	-> Rebuild Project
+2. File 메뉴
+	-> Invalidate Caches/Restart
+3. Tools 메뉴
+	-> Android -> Sync .... 

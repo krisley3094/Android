@@ -1,0 +1,52 @@
+[비동기 1회용 작업 객체]
+ - AsyncTask<A, B, C> 를 제공해준다
+ - 1번의 큰 작업에 주로 사용(다운로드, 비동기 요청, ...)
+
+[장점]
+ - Thread와 Handler를 따로 만들지 않아도 모든 처리가 가능
+ - 진행 상황을 업데이트해주는 기능이 존재
+
+[단점]
+ - 단, 한번밖에 못쓴다
+ - 별도의 지시가 없다면 프로그램이 종료되어도 수행(Thread와 동일한 문제)
+
+[주요 기능]
+
+<UI를 접근할 수 있는 기능들>
+onPreExecute()	백그라운드 작업 시작 전 호출
+onPostExecute()	백그라운드 작업 완료 후 호출
+onProgressUpdate()
+		백그라운드 작업 중 호출 가능
+<UI를 접근할 수 없는 기능>
+doInBackground()	백그라운드 작업
+		이곳에서 publishProgress() 실행시 
+			onProgressUpdate()가 호출됨
+
+[구성 형태]
+public class CustomAsyncTask extends AsyncTask<A, B, C>{
+    protected void onPreExecute(){
+        super.onPreExecute();
+    }
+    protected C doInBackground(A ... values){
+        //publishProgress(B);
+        return C;
+    }
+    protected void onProgressUpdate(B ... params){
+
+    }
+    protected void onPostExecute(C result){
+        super.onPostExecute(result);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
