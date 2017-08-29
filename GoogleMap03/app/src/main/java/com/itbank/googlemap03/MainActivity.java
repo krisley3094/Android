@@ -19,6 +19,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONObject;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback{
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment support =
                 (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
         support.getMapAsync(MainActivity.this);
+
+        JSONObject jason = new JSONObject(R.)
     }
 
     @Override
